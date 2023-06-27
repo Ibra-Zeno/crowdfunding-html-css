@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>HTML/CSS code test</title>
+  </head>
+  <body class="bg-white max-h-screen max-w-screen font-roboto">
+    <section
+      class="max-w-xs flex flex-col mx-auto my-auto mt-20"
+      id="container"
+    >
+      <div
+        id="speech-bubble"
+        class="w-full h-[50px] bg-dark-grey relative rounded-[4px] flex justify-center items-center text-white"
+      >
+        <p class="mx-auto h-full flex items-center text-lg">
+          <strong class="mr-1">£256 </strong>still needed for this project
+        </p>
+      </div>
+      <div id="main-content" class="border-grey-border border mt-4">
+        <div
+          id="top-bar"
+          class="h-[13px] w-full relative bg-progress-bg border border-grey-border"
+        >
+          <div class="absolute inset-0 w-4/5 bg-orange-highlight"></div>
+        </div>
+        <div id="main-section" class="px-4 py-6">
+          <p class="text-lg tracking-tight text-main-grey">
+            <span
+              ><strong class="text-orange-highlight font-semibold"
+                >Only 3 days left</strong
+              >
+              to fund this project.</span
+            >
+            <br />
+            <br />
+            Join the 56 other donors who have already supported this project.
+            Every penny helps.
+          </p>
+          <div id="form" class="flex flex-row">
+            <div
+              id="input-row"
+              class="border-grey-border relative border w-[150px] max-h-[50px] overflow-y-hidden rounded-[6px] mt-4 overflow-x-hidden"
+            >
+              <div id="input-box" class="flex align-middle items-center p-2">
+                <label
+                  for="amount"
+                  class="text-main-grey absolute text-xl -mt-[14px] top-1/2 h-full"
+                >
+                  &#163;</label
+                >
+                <input
+                  type="text"
+                  name="amount"
+                  id="amount"
+                  placeholder="50"
+                  class="focus:ring-0 ml-6 max-w-[5ch] mt-[2px] text-lg focus:outline-none"
+                />
+              </div>
+            </div>
+            <button
+              class="bg-green-btn border border-green-btn-border rounded-[4px] w-[140px] mt-4 ml-4 h-[47px] text-white"
+            >
+              Give Now
+            </button>
+          </div>
+          <p class="text-sm mt-4 text-why-give-50 italic">Why Give £50?</p>
+        </div>
+      </div>
+      <div
+        id="bottom-btns"
+        class="w-full flex font-semibold text-main-grey justify-between my-4"
+      >
+        <button class="bottom-btns">Save for later</button>
+        <button class="bottom-btns">Tell your friends</button>
+      </div>
+    </section>
+  </body>
+</html>
